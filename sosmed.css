@@ -9,14 +9,13 @@ oot {
   }
   
   body {
-    color: black;
+    background-color: #141418;
     width: 100%;
     height: 100vh;
     background-image: url(image/background.jpg);
     background-size: cover;
-    background-position: center;
-    position: relative;
     overflow: hidden;
+    position: absolute;
     margin: 0;
     padding: 0;
   }
@@ -34,10 +33,10 @@ oot {
   }
   
   main {
-    margin-left: 5rem;
+    margin: 5rem;
     padding: 1rem;
   }
-  
+
   .navbar {
     position: fixed;
     background-color: #23232e;
@@ -139,92 +138,9 @@ oot {
     transform: rotate(-180deg);
   }
 
-  .content {
-    color: #fbfcfd;
-    position: absolute;
-    top: 5%;
-    right: 8%;
-    transform: translateY(50%);
-    z-index: 2;
-  }
-
-  h1 {
-    font-size: 88px;
-    margin: 10px 0 30px;
-    line-height: 80px;
-  }
-
-  button {
-    color: #fbfcfd;
-    padding: 10px 25px;
-    background: transparent;
-    border: 1px solid #fff;
+  .foto-ummah img {
     border-radius: 20px;
-    outline: none;
-    cursor: pointer;
-  }
-
-  .stars{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    bottom: -30px;
-  }
-
-  .stars img {
-    animation: star 7s linear infinite;
-  }
-
-  .stars img:nth-child(1) {
-    animation-delay: 2s;
-  }
-  .stars img:nth-child(2) {
-    animation-delay: 1s;
-  }
-  .stars img:nth-child(3) {
-    animation-delay: 3s;
-  }
-  .stars img:nth-child(4) {
-    animation-delay: 4.5s;
-  }
-  .stars img:nth-child(5) {
-    animation-delay: 7s;
-  }
-  .stars img:nth-child(6) {
-    animation-delay: 6s;
-  }
-  .stars img:nth-child(7) {
-    animation-delay: 8s;
-  }
-  .stars img:nth-child(8) {
-    animation-delay: 5.5s;
-  }
-  .stars img:nth-child(9) {
-    animation-delay: 2.5s;
-  }
-  .stars img:nth-child(10) {
-    animation-delay: 5s;
-  }
-
-  @keyframes star {
-    0%{
-      transform: translateY(0);
-      opacity: 0;
-    }
-    50%{
-      
-      opacity: 1;
-    }
-    70%{
-      
-      opacity: 1;
-    }
-    100%{
-      transform: translateY(-80vh);
-      opacity: 0;
-    }
+    background-size: cover;
   }
 
   /* Small screens */
@@ -243,10 +159,9 @@ oot {
       background-image: url(image/background-image-small-screen.png);
     }
 
-    .stars {
-      bottom: -70px;
+    .background img {
+      display: none;
     }
-  
     .navbar-nav {
       flex-direction: row;
     }
@@ -257,12 +172,6 @@ oot {
   
     main {
       margin: 0;
-    }
-
-    h1 {
-      font-size: 44px;
-      margin: 5px 0 15px;
-      line-height: 40px;
     }
   }
   
@@ -292,4 +201,3 @@ oot {
       left: 0px;
     }
   }
-  
